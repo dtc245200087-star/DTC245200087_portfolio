@@ -1,0 +1,13 @@
+# Certificates - khong push key len GitHub
+nginx/certs/*.key
+
+# Docker
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
