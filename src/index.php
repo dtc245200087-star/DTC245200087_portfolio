@@ -21,15 +21,21 @@ $projects = $pdo->query("SELECT * FROM projects ORDER BY id DESC")->fetchAll(PDO
 </header>
 
 <main class="container">
-  <h2>Du an cua toi</h2>
+  <h2>Dự án của tôi</h2>
   <div class="grid">
+    <div class="card cv-preview">
+      <h3>CV cá nhân</h3>
+      <p>Thông tin về bản thân: học vấn, kỹ năng, kinh nghiệm, chứng chỉ, ngôn ngữ, sở thích</p>
+      <span class="tag">CV, Thông tin cá nhân</span>
+      <p><a href="cv.php">Xem thêm</a></p>
+    </div>
     <?php foreach ($projects as $p): ?>
     <div class="card">
       <h3><?= htmlspecialchars($p['title']) ?></h3>
       <p><?= htmlspecialchars($p['description']) ?></p>
       <span class="tag"><?= htmlspecialchars($p['tech_stack']) ?></span>
       <?php if ($p['link']): ?>
-        <p><a href="<?= htmlspecialchars($p['link']) ?>" target="_blank">Xem them</a></p>
+        <p><a href="<?= htmlspecialchars($p['link']) ?>" target="_blank">Xem thêm</a></p>
       <?php endif; ?>
     </div>
     <?php endforeach; ?>
@@ -37,8 +43,8 @@ $projects = $pdo->query("SELECT * FROM projects ORDER BY id DESC")->fetchAll(PDO
 </main>
 
 <footer>
-  <p>&copy; 2026 <?= htmlspecialchars($profile['fullname'] ?? '') ?> — Ma SV: <?= htmlspecialchars($profile['student_id'] ?? '') ?></p>
-  <p><a href="admin.php">Trang quan tri</a></p>
+  <p>&copy; 2026 <?= htmlspecialchars($profile['fullname'] ?? '') ?> — MSSV: <?= htmlspecialchars($profile['student_id'] ?? '') ?></p>
+  <p><a href="admin.php">Trang quản trị</a></p>
 </footer>
 </body>
 </html>

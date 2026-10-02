@@ -25,3 +25,32 @@ th, td { padding: 12px; text-align: left; border-bottom: 1px solid #eee; }
 th { background: #667eea; color: #fff; }
 tr:hover { background: #f9f9ff; }
 footer { text-align: center; padding: 30px; color: #888; margin-top: 40px; }
+
+/* CV Section */
+.cv-section { margin-top: 50px; }
+.cv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+.cv-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
+  border-left: 4px solid #667eea;
+}
+.cv-card h3 {
+  margin-bottom: 10px;
+  color: #667eea;
+  font-size: 1.1rem;
+}
+.cv-card p { font-size: 0.95rem; line-height: 1.7; color: #444; }
+.skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.skill-tag {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+}
