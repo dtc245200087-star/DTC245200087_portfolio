@@ -2,7 +2,7 @@
 $host = getenv('DB_HOST') ?: 'db';
 $dbname = 'portfolio_db';
 $user = 'portfolio_user';
-$pass = 'userpassword';
+$pass = 'P0rtf0li0_User_2026';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $user, $pass);
