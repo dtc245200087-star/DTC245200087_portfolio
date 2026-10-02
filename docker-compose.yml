@@ -31,19 +31,12 @@ services:
       PMA_HOST: db
       UPLOAD_LIMIT: 300M
     ports:
-      - "127.0.0.1:8082:80"
+      - "8085:80"
     depends_on:
       - db
     networks:
+      - frontend_net
       - backend_net
-    security_opt:
-      - no-new-privileges:true
-    cap_drop:
-      - ALL
-    cap_add:
-      - CHOWN
-      - SETGID
-      - SETUID
     restart: always
 
   webapp:
