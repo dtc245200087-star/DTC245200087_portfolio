@@ -101,7 +101,7 @@ Buoc 4 - Kiem tra container:
 | Portfolio | https://localhost | - |
 | Admin | https://localhost/admin.php | - |
 | CV | https://localhost/cv.php | - |
-| phpMyAdmin | http://localhost:8082 | portfolio_user / P0rtf0li0_User_2026 |
+| phpMyAdmin | http://localhost:8085 | portfolio_user / P0rtf0li0_User_2026 |
 | Prometheus | http://localhost:9090 | - |
 | Grafana | http://localhost:3000 | admin / admin |
 | Loki API | http://localhost:3100 | - |
