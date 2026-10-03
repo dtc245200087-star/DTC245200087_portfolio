@@ -65,7 +65,7 @@ Website portfolio ca nhan voi trang admin quan ly noi dung, tich hop day du he t
                ^
                |
     +----------------------+
-    |  portfolio_pma       |  phpMyAdmin (cong 8082)
+    |  portfolio_pma       |  phpMyAdmin (cong 8085)
     +----------------------+
 
 **He thong giam sat (chay song song):**
